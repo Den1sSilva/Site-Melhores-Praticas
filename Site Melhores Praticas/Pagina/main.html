@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaEco - Hidroponia Sustentável</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4CAF50/leaf.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tree-leaf {
+            transition: all 0.3s ease;
+        }
+        
+        .tree-leaf:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-green-50 min-h-screen">
+    <header class="bg-green-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-leaf text-3xl text-green-300"></i>
+                <a href="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Pagina\main.html" class="text-3xl font-bold">Inova<span class="text-blue-300">Eco</span></a>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Pagina\main.html" class="hover:text-blue-200 transition">Início</a>
+                <a href="#footer" class="hover:text-blue-200 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 flex flex-col items-center">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-green-900 mb-4">Cultivando o Futuro com Hidroponia</h2>
+            <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                Descubra como a tecnologia e a natureza se unem para criar soluções sustentáveis de cultivo.
+            </p>
+            <div class="mt-8 max-w-4xl mx-auto relative">
+                <div class="carousel relative w-full max-w-2xl mx-auto">
+                    <div class="carousel-inner relative w-full overflow-hidden h-96">
+                        <!-- Card 1 - Solar -->
+                        <div class="carousel-item active absolute inset-0 w-full transition-opacity duration-500 opacity-100">
+                            <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-xl shadow-lg border-l-8 border-yellow-400 h-full flex flex-col">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-solar-panel text-yellow-500 text-3xl mr-3"></i>
+                                    <h3 class="text-2xl font-bold text-yellow-800">Painéis Solares na Hidroponia</h3>
+                                </div>
+                                <p class="text-gray-700 mb-6 flex-grow">Use energia solar para manter sua horta funcionando! Comece com painéis pequenos que cabem no telhado ou quintal. Eles alimentam as luzes e bombas de água, reduzindo sua conta de luz. Muitas cidades dão desconto em impostos para quem usa energia solar. Você pode começar pequeno e ir aumentando aos poucos.</p>
+                                <div class="bg-yellow-100 text-yellow-800 p-3 rounded-lg text-sm">
+                                    <i class="fas fa-lightbulb mr-2"></i> Dica: Comece com um kit básico e vá ampliando conforme sua horta cresce
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 - Compostagem -->
+                        <div class="carousel-item absolute inset-0 w-full transition-opacity duration-500 opacity-0">
+                            <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl shadow-lg border-l-8 border-green-500 h-full flex flex-col">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-recycle text-green-600 text-3xl mr-3"></i>
+                                    <h3 class="text-2xl font-bold text-green-800">Adubo (Compostagem) na Hidroponia</h3>
+                                </div>
+                                <p class="text-gray-700 mb-6 flex-grow">Transforme seu lixo orgânico em adubo grátis! Restos de comida e folhas secas viram nutrientes para as plantas. Basta uma caixa ou balde com furos para começar. Em 2 meses você terá um fertilizante natural poderoso. Junte-se aos vizinhos para fazer compostagem comunitária e ajudar o meio ambiente.</p>
+                                <div class="bg-green-100 text-green-800 p-3 rounded-lg text-sm">
+                                    <i class="fas fa-seedling mr-2"></i> Dica: Adicione minhocas para transformar o lixo em adubo mais rápido
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 - Água -->
+                        <div class="carousel-item absolute inset-0 w-full transition-opacity duration-500 opacity-0">
+                            <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl shadow-lg border-l-8 border-blue-400 h-full flex flex-col">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-tint text-blue-500 text-3xl mr-3"></i>
+                                    <h3 class="text-2xl font-bold text-blue-800">Reutilização da Água da Chuva</h3>
+                                </div>
+                                <p class="text-gray-700 mb-6 flex-grow">Aproveite a água da chuva para regar suas plantas! Com calhas simples e um barril, você pode armazenar água de graça. Essa água é ótima para hortas, economizando na conta e ajudando o planeta. Para segurança, adicione um pouco de cloro (bem pouquinho) e use primeiro em plantas mais resistentes.</p>
+                                <div class="bg-blue-100 text-blue-800 p-3 rounded-lg text-sm">
+                                    <i class="fas fa-cloud-rain mr-2"></i> Dica: Bombinhas pequenas de aquário funcionam bem para circular a água
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 - Público -->
+                        <div class="carousel-item absolute inset-0 w-full transition-opacity duration-500 opacity-0">
+                            <div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-xl shadow-lg border-l-8 border-purple-400 h-full flex flex-col">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-users text-purple-500 text-3xl mr-3"></i>
+                                    <h3 class="text-2xl font-bold text-purple-800">Medidas para o Público</h3>
+                                </div>
+                                <p class="text-gray-700 mb-6 flex-grow">Qualquer pessoa pode ter uma horta em casa! Com canos ou garrafas pet, você pode cultivar temperos e até morangos na varanda ou janela. Comece com plantas fáceis como manjericão e hortelã. Participe de grupos comunitários para trocar dicas e mudas com outros jardineiros urbanos.</p>
+                                <div class="bg-purple-100 text-purple-800 p-3 rounded-lg text-sm">
+                                    <i class="fas fa-home mr-2"></i> Dica: Existem aplicativos que ensinam como montar sua horta passo a passo
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 - Serviços Públicos -->
+                        <div class="carousel-item absolute inset-0 w-full transition-opacity duration-500 opacity-0">
+                            <div class="bg-gradient-to-br from-red-50 to-pink-50 p-8 rounded-xl shadow-lg border-l-8 border-red-400 h-full flex flex-col">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-landmark text-red-500 text-3xl mr-3"></i>
+                                    <h3 class="text-2xl font-bold text-red-800">Medidas para Serviços Públicos</h3>
+                                </div>
+                                <p class="text-gray-700 mb-6 flex-grow">Prefeituras podem ajudar criando hortas comunitárias em terrenos vazios e oferecendo cursos gratuitos. Escolas podem ensinar crianças a cultivar alimentos saudáveis. Postos de saúde podem recomendar hortas como terapia e fonte de alimentos frescos. Peça ao seu vereador para apoiar essas ideias!</p>
+                                <div class="bg-red-100 text-red-800 p-3 rounded-lg text-sm">
+                                    <i class="fas fa-graduation-cap mr-2"></i> Dica: Órgãos públicos oferecem cursos gratuitos sobre agricultura urbana
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 - Serviços Privados -->
+                        <div class="carousel-item absolute inset-0 w-full transition-opacity duration-500 opacity-0">
+                            <div class="bg-gradient-to-br from-indigo-50 to-violet-50 p-8 rounded-xl shadow-lg border-l-8 border-indigo-400 h-full flex flex-col">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-building text-indigo-500 text-3xl mr-3"></i>
+                                    <h3 class="text-2xl font-bold text-indigo-800">Medidas para Serviços Privados</h3>
+                                </div>
+                                <p class="text-gray-700 mb-6 flex-grow">Empresas podem ter hortas nos escritórios para os funcionários. Restaurantes podem cultivar seus próprios temperos. Mercados podem vender verduras frescas colhidas na hora. Escritórios podem transformar áreas comuns em jardins produtivos. Tudo isso melhora o ambiente e a saúde de todos!</p>
+                                <div class="bg-indigo-100 text-indigo-800 p-3 rounded-lg text-sm">
+                                    <i class="fas fa-handshake mr-2"></i> Dica: Cada setor da empresa pode cuidar de uma parte da horta
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-white text-green-800 p-4 rounded-full shadow-lg ml-4 hover:bg-green-50 transition transform hover:scale-110">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-white text-green-800 p-4 rounded-full shadow-lg mr-4 hover:bg-green-50 transition transform hover:scale-110">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-6 space-x-2">
+                <button class="carousel-dot w-3 h-3 rounded-full bg-green-300 hover:bg-green-600 transition" data-index="0"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-green-300 hover:bg-green-600 transition" data-index="1"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-green-300 hover:bg-green-600 transition" data-index="2"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-green-300 hover:bg-green-600 transition" data-index="3"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-green-300 hover:bg-green-600 transition" data-index="4"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-green-300 hover:bg-green-600 transition" data-index="5"></button>
+            </div>
+        </div>
+
+
+            <!-- Cards de Plantas -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Pagina\hidroponia.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-green-500 group overflow-hidden">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-seedling text-green-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-green-800">Hidroponia</h3>
+                    </div>
+                    <div class="h-40 mb-4 rounded-md overflow-hidden">
+                        <img src="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Imagens\hidroponia.jpg" 
+                             alt="Plantas crescendo em sistema hidropônico" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 group-hover:text-gray-800">Conheça os princípios e benefícios da agricultura sem solo.</p>
+                </a>
+
+                <a href="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Pagina\desertosalimentares.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-blue-500 group overflow-hidden">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-map-marked-alt text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-blue-800">Desertos Alimentares</h3>
+                    </div>
+                    <div class="h-40 mb-4 rounded-md overflow-hidden">
+                        <img src="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Imagens\Gemini_Generated_Image_ggk7g9ggk7g9ggk7.png" 
+                             alt="Horta urbana" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 group-hover:text-gray-800">Como a hidroponia pode resolver problemas de acesso a alimentos.</p>
+                </a>
+
+                <a href="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Pagina\passoapasso.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-brown-500 group overflow-hidden">
+                    <div class="h-40 mb-4 rounded-md overflow-hidden">
+                        <img src="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Imagens\Livros.jpg" 
+                             alt="Pessoa lendo livro sobre hidroponia" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-book-open text-brown-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-brown-800">Passo a Passo</h3>
+                    </div>
+                    <p class="text-gray-600 group-hover:text-gray-800">Guia completo para montar seu próprio sistema hidropônico.</p>
+                </a>
+
+                <a href="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Pagina\sobreprojeto.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-green-600 group md:col-span-3 overflow-hidden">
+                    <div class="h-40 mb-4 rounded-md overflow-hidden ">
+                        <img src="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Imagens\projeto.jpg" 
+                             alt="Equipe trabalhando em projeto" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-green-800">O Projeto</h3>
+                    </div>
+                    <p class="text-gray-600 group-hover:text-gray-800">Nossa missão de democratizar a agricultura sustentável através da tecnologia.</p>
+                </a>
+        </div> 
+
+        <!-- Image Section -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="rounded-xl overflow-hidden shadow-xl w-full mx-auto mb-16">
+                <img src="C:\Users\x525680\OneDrive - rede.sp\Área de Trabalho\Site Melhores Praticas\Imagens\potatoes.jpg" 
+                     alt="Batatas cultivadas em hidroponia" 
+                     class="w-full h-64 object-cover">
+            </div>
+        </div>
+
+        <!-- Benefits Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto px-4">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                <div class="text-green-600 text-4xl mb-4">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <h3 class="text-xl font-bold text-green-800 mb-2">Economia de Água</h3>
+                <p class="text-brown-700">A hidroponia utiliza até 90% menos água que a agricultura tradicional.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                <div class="text-blue-600 text-4xl mb-4">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="text-xl font-bold text-green-800 mb-2">Crescimento Rápido</h3>
+                <p class="text-brown-700">Plantas crescem até 50% mais rápido em sistemas hidropônicos.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                <div class="text-brown-600 text-4xl mb-4">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="text-xl font-bold text-green-800 mb-2">Alimento Saudável</h3>
+                <p class="text-brown-700">Produção de alimentos nutritivos em qualquer ambiente.</p>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-900 text-white py-8 mt-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 z-0"></div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold">Inova<span class="text-blue-300">Eco</span></h2>
+                    <p class="text-green-200">Cultivando soluções sustentáveis</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-green-700 mt-6 pt-6 text-center text-green-300">
+                <p>&copy; 2025 InovaEco. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Efeito de hover para os links da árvore
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.classList.add('shadow-xl', 'scale-110');
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.classList.remove('shadow-xl', 'scale-110');
+            });
+        });
+        
+        // Menu mobile (simplificado)
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Menu mobile seria aberto aqui em uma implementação completa');
+        });
+        // Enhanced Carousel functionality
+        const carousel = document.querySelector('.carousel-inner');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.querySelector('.fa-chevron-left').parentElement;
+        const nextBtn = document.querySelector('.fa-chevron-right').parentElement;
+        
+        let currentIndex = 0;
+        const totalItems = items.length;
+        
+        function updateCarousel() {
+            items.forEach((item, index) => {
+                if (index === currentIndex) {
+                    item.classList.remove('opacity-0');
+                    item.classList.add('opacity-100');
+                    item.classList.add('z-10');
+                } else {
+                    item.classList.remove('opacity-100');
+                    item.classList.add('opacity-0');
+                    item.classList.remove('z-10');
+                }
+            });
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateCarousel();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        });
+        
+        // Dot navigation
+        const dots = document.querySelectorAll('.carousel-dot');
+        
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.remove('bg-green-300');
+                    dot.classList.add('bg-green-600');
+                    dot.classList.add('w-4');
+                } else {
+                    dot.classList.add('bg-green-300');
+                    dot.classList.remove('bg-green-600');
+                    dot.classList.remove('w-4');
+                }
+            });
+        }
+        
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentIndex = parseInt(dot.getAttribute('data-index'));
+                updateCarousel();
+                updateDots();
+            });
+        });
+        
+        // Update both carousel and dots when changing slides
+        function updateCarousel() {
+            items.forEach((item, index) => {
+                if (index === currentIndex) {
+                    item.classList.remove('opacity-0');
+                    item.classList.add('opacity-100');
+                    item.classList.add('z-10');
+                } else {
+                    item.classList.remove('opacity-100');
+                    item.classList.add('opacity-0');
+                    item.classList.remove('z-10');
+                }
+            });
+            updateDots();
+        }
+        
+        // Auto-rotate carousel every 10 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }, 10000);
+
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#footer') {
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
