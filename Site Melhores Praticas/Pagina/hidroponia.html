@@ -6,23 +6,10 @@
     <title>Hidroponia: O Futuro da Agricultura</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4CAF50/leaf.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #3a5a40 0%, #588157 50%, #a3b18a 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .parallax {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
 </head>
+
 <body class="bg-green-50 font-sans">
     <header class="bg-green-800 text-white shadow-lg">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -403,38 +390,7 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#footer') {
-                    window.scrollTo({
-                        top: document.body.scrollHeight,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    document.querySelector(targetId).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+    <script src="js/scripts.js"></script>
 
-        // Simple animation for cards on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fadeIn');
-                }
-            });
-        }, {threshold: 0.1});
-
-        document.querySelectorAll('.card-hover').forEach(card => {
-            observer.observe(card);
-            card.classList.add('opacity-0', 'transition-opacity', 'duration-500', 'ease-in-out');
-        });
-    </script>
 </body>
 </html>

@@ -6,27 +6,10 @@
     <title>Guia Completo de Hidroponia - De Casa à Escala Municipal</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4CAF50/leaf.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #2f855a 0%, #276749 50%, #22543d 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .step-icon {
-            width: 60px;
-            height: 60px;
-            background-color: #2f855a;
-        }
-        .tab-active {
-            border-bottom: 3px solid #2f855a;
-            color: #2f855a;
-            font-weight: 600;
-        }
-    </style>
 </head>
+
 <body class="font-sans bg-gray-50">
     <header class="bg-green-700 text-white shadow-lg">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -286,24 +269,7 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#footer') {
-                    window.scrollTo({
-                        top: document.body.scrollHeight,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    document.querySelector(targetId).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+   <script src="js/scripts.js"></script>
+
 </body>
 </html>

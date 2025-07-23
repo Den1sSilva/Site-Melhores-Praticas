@@ -6,56 +6,10 @@
     <title>InovaEco - Guia Completo de Compostagem</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4CAF50/leaf.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .tree-leaf {
-            transition: all 0.3s ease;
-        }
-        
-        .tree-leaf:hover {
-            transform: scale(1.1);
-            filter: brightness(1.1);
-        }
-        
-        .nav-link {
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            transform: translateY(-5px);
-        }
-        
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        /* New styles for composting page */
-        .compost-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .compost-icon {
-            transition: all 0.3s ease;
-        }
-        
-        .compost-card:hover .compost-icon {
-            transform: scale(1.1);
-        }
-    </style>
 </head>
+
 <body class="bg-gradient-to-b from-blue-50 to-green-50 min-h-screen">
     <header class="bg-green-800 text-white shadow-lg">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -220,11 +174,6 @@
         </div>
     </footer>
 
-    <script>
-        // Simple mobile menu toggle
-        document.querySelector('button').addEventListener('click', function() {
-            alert('Menu mobile seria aberto aqui em uma implementação completa');
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

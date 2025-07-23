@@ -1,0 +1,54 @@
+.tree-leaf {
+    transition: all 0.3s ease;
+}
+
+.tree-leaf:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-5px);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Usado no passoapasso.html */
+.hero-gradient {
+    background: linear-gradient(135deg, #2f855a 0%, #276749 50%, #22543d 100%);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #2f855a;
+}
+
+.tab-active {
+    border-bottom: 3px solid #2f855a;
+    color: #2f855a;
+    font-weight: 600;
+}

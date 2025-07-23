@@ -6,42 +6,10 @@
     <title>InovaEco - Hidroponia Sustentável</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4CAF50/leaf.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .tree-leaf {
-            transition: all 0.3s ease;
-        }
-        
-        .tree-leaf:hover {
-            transform: scale(1.1);
-            filter: brightness(1.1);
-        }
-        
-        .nav-link {
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            transform: translateY(-5px);
-        }
-        
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-    </style>
 </head>
+
 <body class="bg-gradient-to-b from-blue-50 to-green-50 min-h-screen">
     <header class="bg-green-800 text-white shadow-lg">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -246,121 +214,7 @@
         </div>
     </footer>
 
-    <script>
-        // Efeito de hover para os links da árvore
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('mouseenter', function() {
-                this.classList.add('shadow-xl', 'scale-110');
-            });
-            
-            link.addEventListener('mouseleave', function() {
-                this.classList.remove('shadow-xl', 'scale-110');
-            });
-        });
-        
-        // Menu mobile (simplificado)
-        document.querySelector('button').addEventListener('click', function() {
-            alert('Menu mobile seria aberto aqui em uma implementação completa');
-        });
-        // Enhanced Carousel functionality
-        const carousel = document.querySelector('.carousel-inner');
-        const items = document.querySelectorAll('.carousel-item');
-        const prevBtn = document.querySelector('.fa-chevron-left').parentElement;
-        const nextBtn = document.querySelector('.fa-chevron-right').parentElement;
-        
-        let currentIndex = 0;
-        const totalItems = items.length;
-        
-        function updateCarousel() {
-            items.forEach((item, index) => {
-                if (index === currentIndex) {
-                    item.classList.remove('opacity-0');
-                    item.classList.add('opacity-100');
-                    item.classList.add('z-10');
-                } else {
-                    item.classList.remove('opacity-100');
-                    item.classList.add('opacity-0');
-                    item.classList.remove('z-10');
-                }
-            });
-        }
-        
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-            updateCarousel();
-        });
-        
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            updateCarousel();
-        });
-        
-        // Dot navigation
-        const dots = document.querySelectorAll('.carousel-dot');
-        
-        function updateDots() {
-            dots.forEach((dot, index) => {
-                if (index === currentIndex) {
-                    dot.classList.remove('bg-green-300');
-                    dot.classList.add('bg-green-600');
-                    dot.classList.add('w-4');
-                } else {
-                    dot.classList.add('bg-green-300');
-                    dot.classList.remove('bg-green-600');
-                    dot.classList.remove('w-4');
-                }
-            });
-        }
-        
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                currentIndex = parseInt(dot.getAttribute('data-index'));
-                updateCarousel();
-                updateDots();
-            });
-        });
-        
-        // Update both carousel and dots when changing slides
-        function updateCarousel() {
-            items.forEach((item, index) => {
-                if (index === currentIndex) {
-                    item.classList.remove('opacity-0');
-                    item.classList.add('opacity-100');
-                    item.classList.add('z-10');
-                } else {
-                    item.classList.remove('opacity-100');
-                    item.classList.add('opacity-0');
-                    item.classList.remove('z-10');
-                }
-            });
-            updateDots();
-        }
-        
-        // Auto-rotate carousel every 10 seconds
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            updateCarousel();
-        }, 10000);
+   <script src="js/scripts.js"></script>
 
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#footer') {
-                    window.scrollTo({
-                        top: document.body.scrollHeight,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    document.querySelector(targetId).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-    </script>
 </body>
 </html>
