@@ -24,9 +24,7 @@ function initMobileMenu() {
     const buttons = document.querySelectorAll('button.md\\:hidden, button');
 
     buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            alert('Menu mobile seria aberto aqui em uma implementação completa');
-        });
+        
     });
 }
 
