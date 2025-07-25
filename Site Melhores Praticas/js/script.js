@@ -5,26 +5,27 @@ document.addEventListener("DOMContentLoaded", function () {
     initSmoothScroll();
     initAccordion();
     initCardAnimations();
+    initGlossarySearch();
+    initBackToTop();
+    initScrollAnimations();
 });
 
 // 🌿 Hover animado nos links da árvore
 function initNavLinkHover() {
     document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('mouseenter', function () {
-            this.classList.add('shadow-xl', 'scale-110');
-        });
-        link.addEventListener('mouseleave', function () {
-            this.classList.remove('shadow-xl', 'scale-110');
-        });
+        link.addEventListener('mouseenter', () => link.classList.add('shadow-xl', 'scale-110'));
+        link.addEventListener('mouseleave', () => link.classList.remove('shadow-xl', 'scale-110'));
     });
 }
 
 // 📱 Menu mobile (alerta simples ou lógica futura)
 function initMobileMenu() {
     const buttons = document.querySelectorAll('button.md\\:hidden, button');
-
     buttons.forEach(button => {
-        
+        button.addEventListener('click', () => {
+            console.log("Menu mobile ativado (placeholder)");
+            // Lógica real pode ser adicionada aqui futuramente
+        });
     });
 }
 
@@ -84,7 +85,7 @@ function initCarousel() {
         updateCarousel();
     }, 10000);
 
-    updateCarousel(); // estado inicial
+    updateCarousel();
 }
 
 // 🧭 Rolagem suave para links com #
@@ -114,7 +115,6 @@ function initAccordion() {
         button.addEventListener('click', function () {
             const content = this.nextElementSibling;
             const icon = this.querySelector('i');
-
             if (content) content.classList.toggle('hidden');
             if (icon) icon.classList.toggle('rotate-180');
         });
@@ -137,5 +137,59 @@ function initCardAnimations() {
     cards.forEach(card => {
         observer.observe(card);
         card.classList.add('opacity-0', 'transition-opacity', 'duration-500', 'ease-in-out');
+    });
+}
+
+// 🔍 Filtro do glossário (só funciona na página do glossário)
+function initGlossarySearch() {
+    const searchInput = document.getElementById('glossary-search');
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+
+    if (!searchInput || glossaryItems.length === 0) return;
+
+    searchInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+        glossaryItems.forEach(item => {
+            const title = item.querySelector('h3')?.textContent.toLowerCase() || '';
+            const desc = item.querySelector('p')?.textContent.toLowerCase() || '';
+            const visible = title.includes(query) || desc.includes(query);
+            item.style.display = visible ? 'block' : 'none';
+        });
+    });
+}
+
+// ⬆️ Botão "voltar ao topo"
+function initBackToTop() {
+    const backBtn = document.getElementById('back-to-top');
+    if (!backBtn) return;
+
+    window.addEventListener('scroll', () => {
+        const visible = window.scrollY > 100;
+        backBtn.classList.toggle('opacity-0', !visible);
+        backBtn.classList.toggle('pointer-events-none', !visible);
+    });
+
+    backBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// 🎬 Animação de entrada geral com fade/slide
+function initScrollAnimations() {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    if (elements.length === 0) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-4');
+            }
+        });
+    });
+
+    elements.forEach(el => {
+        el.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-500');
+        observer.observe(el);
     });
 }
