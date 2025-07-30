@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidroponia: O Futuro da Agricultura</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4CAF50/leaf.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-green-50 font-sans">
+    <header class="bg-green-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-leaf text-3xl text-green-300"></i>
+                <a href="main.html" class="text-3xl font-bold">Inova<span class="text-blue-300">Eco</span></a>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="main.html" class="hover:text-blue-200 transition">Início</a>
+                <a href="https://clic.prefeitura.sp.gov.br/Pr%C3%AAmioMelhoresPr%C3%A1ticas" class="hover:text-blue-200 transition">Sobre</a>
+            </nav>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- O que é Hidroponia -->
+        <section id="o-que-e" class="mb-16">
+            <div class="flex flex-col md:flex-row items-center mb-8">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-green-800 mb-4">O que é Hidroponia?</h2>
+                    <p class="text-gray-700 mb-4">
+                        Hidroponia é uma técnica de cultivo de plantas sem solo, onde as raízes recebem uma solução nutritiva balanceada que contém água e todos os nutrientes essenciais para o desenvolvimento da planta.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        A palavra "hidroponia" vem do grego "hydro" (água) e "ponos" (trabalho), significando literalmente "trabalho com água". Este método permite o cultivo em ambientes controlados, independentemente das condições do solo local.
+                    </p>
+                    <p class="text-gray-700">
+                        Diferente da agricultura tradicional, a hidroponia elimina a necessidade de terra fértil, reduz o consumo de água e permite maior controle sobre o crescimento das plantas.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="..\Imagens\SistemaHidroponico.jpg" alt="Sistema hidropônico" class="rounded-lg shadow-md h-128 w-full">
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                <h3 class="text-xl font-semibold text-blue-800 mb-3">Como funciona?</h3>
+                <p class="text-gray-700">
+                    Na hidroponia, as plantas são cultivadas em substratos inertes (como areia, argila expandida ou lã de rocha) ou diretamente na água. Uma solução nutritiva contendo todos os macro e micronutrientes necessários é fornecida às raízes de forma controlada. O sistema pode ser aberto (solução descartada após uso) ou fechado (solução recirculada).
+                </p>
+        </section>
+
+        <!-- Tipos de Hidroponia -->
+        <section id="tipos" class="mb-16">
+            <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Tipos de Sistemas Hidropônicos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- NFT -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-green-100 p-4 rounded-lg mb-4 text-center">
+                        <i class="fas fa-water text-green-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">NFT (Nutrient Film Technique)</h3>
+                    <p class="text-gray-600 mb-3">
+                        Um fluxo contínuo e raso de solução nutritiva circula pelas raízes das plantas, que ficam suspensas em canais inclinados.
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Vantagens:</span> Baixo consumo de água, ideal para plantas de pequeno porte como alface e ervas.
+                    </p>
+                </div>
+
+                <!-- Deep Water Culture -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-blue-100 p-4 rounded-lg mb-4 text-center">
+                        <i class="fas fa-swimming-pool text-blue-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Deep Water Culture (DWC)</h3>
+                    <p class="text-gray-600 mb-3">
+                        As raízes ficam totalmente submersas em solução nutritiva oxigenada, com as plantas apoiadas em uma plataforma flutuante.
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Vantagens:</span> Simplicidade de instalação, excelente para iniciantes e plantas de rápido crescimento.
+                    </p>
+                </div>
+
+                <!-- Ebb and Flow -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-brown-100 p-4 rounded-lg mb-4 text-center">
+                        <i class="fas fa-tint text-brown-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-brown-700 mb-3">Ebb and Flow (Fluxo e Refluxo)</h3>
+                    <p class="text-gray-600 mb-3">
+                        A solução nutritiva inunda temporariamente o substrato onde as plantas estão fixadas e depois drena de volta ao reservatório.
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Vantagens:</span> Versátil para diversos tipos de plantas, permite uso de diferentes substratos.
+                    </p>
+                </div>
+
+                <!-- Aeroponia -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-purple-100 p-4 rounded-lg mb-4 text-center">
+                        <i class="fas fa-wind text-purple-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-3">Aeroponia</h3>
+                    <p class="text-gray-600 mb-3">
+                        As raízes ficam suspensas no ar e recebem nutrientes através de uma névoa de solução nutritiva aplicada periodicamente.
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Vantagens:</span> Máximo oxigênio para as raízes, crescimento acelerado, ideal para espaços verticais.
+                    </p>
+                </div>
+
+                <!-- Wick System -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-yellow-100 p-4 rounded-lg mb-4 text-center">
+                        <i class="fas fa-fire text-yellow-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-yellow-700 mb-3">Sistema de Pavio (Wick)</h3>
+                    <p class="text-gray-600 mb-3">
+                        Um pavio transporta a solução nutritiva do reservatório para o substrato onde as plantas estão enraizadas, por capilaridade.
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Vantagens:</span> Não requer eletricidade, sistema passivo ideal para pequenas plantas e iniciantes.
+                    </p>
+                </div>
+
+                <!-- Drip System -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-red-100 p-4 rounded-lg mb-4 text-center">
+                        <i class="fas fa-tint-slash text-red-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-red-700 mb-3">Sistema por Gotejamento</h3>
+                    <p class="text-gray-600 mb-3">
+                        Uma bomba envia solução nutritiva através de tubos e emissores que gotejam diretamente na base de cada planta.
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Vantagens:</span> Altamente controlável, eficiente no uso de água e nutrientes, escalável.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vantagens -->
+        <section id="vantagens" class="mb-16">
+            <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Vantagens da Hidroponia</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-tint text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-700">Economia de Água</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        A hidroponia utiliza até 90% menos água que a agricultura tradicional, pois a água é recirculada no sistema e não se perde por infiltração no solo.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-700">Maior Produtividade</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        As plantas crescem mais rápido e produzem mais, pois recebem nutrientes de forma otimizada e não precisam competir por recursos como na agricultura tradicional.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-brown-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-bug text-brown-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-brown-700">Menos Pragas e Doenças</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Como não há solo, muitos patógenos e pragas são eliminados, reduzindo a necessidade de pesticidas e produzindo alimentos mais saudáveis.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-map-marker-alt text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-700">Cultivo em Qualquer Lugar</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Pode ser implementado em áreas urbanas, telhados, desertos ou locais com solo pobre, permitindo produção local de alimentos frescos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-green-800 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4">Comparativo: Hidroponia vs Agricultura Tradicional</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-green-700">
+                                <th class="pb-2 pr-4">Fator</th>
+                                <th class="pb-2 px-4">Hidroponia</th>
+                                <th class="pb-2 pl-4">Tradicional</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-green-700">
+                                <td class="py-3 pr-4">Uso de Água</td>
+                                <td class="py-3 px-4">Até 90% menos</td>
+                                <td class="py-3 pl-4">Alto consumo</td>
+                            </tr>
+                            <tr class="border-b border-green-700">
+                                <td class="py-3 pr-4">Espaço Necessário</td>
+                                <td class="py-3 px-4">Vertical/Compacto</td>
+                                <td class="py-3 pl-4">Grandes áreas</td>
+                            </tr>
+                            <tr class="border-b border-green-700">
+                                <td class="py-3 pr-4">Ciclo de Crescimento</td>
+                                <td class="py-3 px-4">30-50% mais rápido</td>
+                                <td class="py-3 pl-4">Tempo normal</td>
+                            </tr>
+                            <tr class="border-b border-green-700">
+                                <td class="py-3 pr-4">Uso de Pesticidas</td>
+                                <td class="py-3 px-4">Mínimo/Nenhum</td>
+                                <td class="py-3 pl-4">Frequentemente necessário</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 pr-4">Dependência do Solo</td>
+                                <td class="py-3 px-4">Nenhuma</td>
+                                <td class="py-3 pl-4">Total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desertos Alimentares -->
+        <section id="desertos" class="mb-16">
+            <div class="flex flex-col md:flex-row items-center mb-8">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-green-800 mb-4">Hidroponia em Desertos Alimentares</h2>
+                    <p class="text-gray-700 mb-4">
+                        Desertos alimentares são áreas urbanas ou rurais onde o acesso a alimentos frescos e saudáveis é limitado ou inexistente, geralmente devido à falta de mercados, feiras ou hortas comunitárias em um raio acessível.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Essas áreas são frequentemente caracterizadas pela predominância de lojas de conveniência que vendem principalmente alimentos processados, ricos em calorias mas pobres em nutrientes.
+                    </p>
+                    <p class="text-gray-700">
+                        A hidroponia surge como uma solução inovadora para esses problemas, permitindo a produção local de vegetais frescos mesmo em espaços reduzidos ou em solos pobres.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="..\Imagens\desertoalimen.png" alt="Deserto alimentar" class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+
+            <div class="bg-brown-50 p-6 rounded-lg border-l-4 border-brown-500">
+                <h3 class="text-xl font-semibold text-brown-800 mb-3">Impacto dos Desertos Alimentares</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded shadow">
+                        <i class="fas fa-heartbeat text-red-500 text-2xl mb-2"></i>
+                        <h4 class="font-semibold text-brown-700">Saúde Pública</h4>
+                        <p class="text-gray-600 text-sm">Maior incidência de obesidade, diabetes e doenças cardiovasculares</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <i class="fas fa-graduation-cap text-blue-500 text-2xl mb-2"></i>
+                        <h4 class="font-semibold text-brown-700">Desenvolvimento Infantil</h4>
+                        <p class="text-gray-600 text-sm">Deficiências nutricionais afetam o aprendizado e crescimento</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <i class="fas fa-dollar-sign text-green-500 text-2xl mb-2"></i>
+                        <h4 class="font-semibold text-brown-700">Desigualdade Social</h4>
+                        <p class="text-gray-600 text-sm">Populações de baixa renda são as mais afetadas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="mb-16">
+            <h2 class="text-3xl font-bold text-green-800 mb-8 text-center">Projetos de Hidroponia em Desertos Alimentares</h2>
+            
+            <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                <h3 class="text-2xl font-semibold text-blue-800 mb-4">Por que a Prefeitura está investindo?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">
+                            As prefeituras estão implementando projetos de hidroponia em desertos alimentares como uma estratégia multifacetada para:
+                        </p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Melhorar o acesso a alimentos frescos e nutritivos em áreas carentes</li>
+                            <li>Reduzir os custos de transporte e distribuição de alimentos</li>
+                            <li>Criar oportunidades de emprego e renda na comunidade local</li>
+                            <li>Promover educação alimentar e nutricional</li>
+                            <li>Fomentar a sustentabilidade e resiliência urbana</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="..\Imagens\solucaohidro.png" alt="Projeto comunitário" class="rounded-lg shadow-md w-full h-132">
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-green-700 mb-6 text-center">Exemplos de Projetos Bem-Sucedidos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="..\Imagens\hortaescolar.jpg">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-green-800 mb-2">Hortas Escolares</h4>
+                        <p class="text-gray-600 mb-4">
+                            Sistemas hidropônicos em escolas para merenda escolar e educação ambiental, envolvendo alunos, professores e comunidade.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Diversas cidades brasileiras</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="..\Imagens\fazendaurbana.jpg" alt="Fazenda urbana" class="w-full h-80 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-green-800 mb-2">Fazendas Urbanas</h4>
+                        <p class="text-gray-600 mb-4">
+                            Grandes estruturas hidropônicas em áreas ociosas da cidade, produzindo toneladas de alimentos para mercados locais.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="..\Imagens\coperativa.jfif" alt="Cooperativa" class="w-full h-80 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-green-800 mb-2">Cooperativas Comunitárias</h4>
+                        <p class="text-gray-600 mb-4">
+                            Pequenos produtores se unem em cooperativas hidropônicas para abastecer feiras locais e programas de alimentação.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Belo Horizonte, MG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <button id="back-to-top" title="Voltar ao topo"
+            class="fixed bottom-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition opacity-0 pointer-events-none z-50">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <footer class="bg-green-900 text-white py-8 mt-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 z-0"></div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold">Inova<span class="text-blue-300">Eco</span></h2>
+                    <p class="text-green-200">Cultivando soluções sustentáveis</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-white hover:text-blue-300 transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-green-700 mt-6 pt-6 text-center text-green-300">
+                <p>&copy; 2023 InovaEco. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
